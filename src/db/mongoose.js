@@ -7,6 +7,8 @@ mongoose.connect(process.env.MONGODB_URL, {
     useCreateIndex: true,
     useFindAndModify:false,
     useUnifiedTopology: true 
+}).then((result)=>{
+    console.log(result)
 }).catch((e)=>{
     console.log(e)
 })
